@@ -2,7 +2,7 @@
 
 # Hi there, I'm Heaven Louisse 👋
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=38BDF8&center=true&vCenter=true&width=380&lines=Software+Engineer;Building+scalable+apps;Hardware+%26+Embedded+Systems)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=38BDF8&center=true&vCenter=true&width=380&lines=Computer+Engineer;Building+scalable+apps;Hardware+%26+Embedded+Systems)](https://git.io/typing-svg)
 
 </div>
 
