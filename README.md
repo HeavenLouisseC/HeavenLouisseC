@@ -78,9 +78,9 @@ I bridge the gap between low-level hardware control and high-performance web sys
       <p><code>React</code> <code>Tailwind v4</code> <code>Vite</code> <code>Recharts</code></p>
     </td>
     <td width="50%" valign="top">
-      <h4>🏛️ CommunityConnect Public Service Portal</h4>
-      <p>Multi-tier web platform developed with <b>Python/Flask</b> and <b>MySQL</b>, featuring role-based access control (RBAC), activity audit logging, and responsive citizen service workflows.</p>
-      <p><code>Python</code> <code>Flask</code> <code>MySQL</code> <code>Bootstrap</code></p>
+      <h4>🏛️ Scholar Bridge</h4>
+      <p>Multi-tier mobile application developed with <b>Python/Flask</b> and <b>MySQL</b>, featuring a Product/Service Publication, and a secured P2P Trading</p>
+      <p><code>Python</code> <code>Kivy</code> <code>KivyLang</code><code>Flask</code> <code>MySQL</code></p>
     </td>
   </tr>
 </table>
