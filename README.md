@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Heaven Louisse
+# Hi there, I'm Heaven Louisse 👋️
 ### **Computer Engineering Student | Full-Stack & Embedded Systems Developer**
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&pause=1000&color=38BDF8&center=true&vCenter=true&width=460&lines=Building+hardware-software+integrations;Full-Stack+Web+%26+FastAPI+Backends;Firmware%2C+Microcontrollers+%26+Digital+Logic;Linux+Dev+%26+Open-Source+Enthusiast)](https://git.io/typing-svg)
