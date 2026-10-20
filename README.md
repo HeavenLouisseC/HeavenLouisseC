@@ -34,7 +34,7 @@ I bridge the gap between low-level hardware control and high-performance web sys
 * 🎓 **Degree:** Third-Year Computer Engineering (BSCpE) student
 * 💻 **Primary OS:** Linux Mint & CachyOS
 * 🛠️ **Hardware Lab:** Digital logic circuit simulation, sensor telemetry, and microcontrollers (ESP8266, Arduino)
-* ⚡ **Software Core:** Modern component architectures (Vue 3, React), asynchronous backend APIs (FastAPI, Flask), and clean modular code
+* ⚡ **Software Core:** Modern component architectures (Vue 3, React, Tailwindcss), asynchronous backend APIs (FastAPI, Flask), and clean modular code
 * 🎯 **Current Focus:** Real-time data logging, telemetry checksums, and scalable full-stack pipelines
 
 ---
