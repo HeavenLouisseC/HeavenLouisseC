@@ -2,15 +2,25 @@ name: Generate Snake Contribution Game
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    # Run every 6 hours (00:00, 06:00, 12:00, 18:00 UTC) to keep contributions fresh without excessive runner load
+    - cron: "0 */6 * * *"
+  # Allows manual triggering from GitHub Actions tab
   workflow_dispatch:
+  # Run on every push to main
   push:
     branches:
       - main
 
+# Prevent parallel runs from colliding when deploying to the output branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
+    name: Build & Deploy Retro Snake
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: write
 
@@ -18,22 +28,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Generates the snake SVGs using GH_TOKEN to read private contributions
-      - name: Generate Snake SVG
+      # Generates retro snake SVGs and animated GIF
+      # Uses GH_TOKEN for private contributions, with safe fallback to GITHUB_TOKEN
+      - name: Generate Retro Snake Game
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%2338bdf8
+            dist/github-contribution-grid-snake.gif?palette=github-dark&color_snake=%2338bdf8&color_background=%230d1117
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
 
-      # Deploys the generated SVGs to the output branch
-      - name: Push Snake SVG to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      # Deploys the generated assets to the output branch
+      - name: Push Snake Assets to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "chore: update retro snake contribution animation [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
