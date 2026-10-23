@@ -19,9 +19,9 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg" style="max-width: 100%; height: auto;">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake-dark.svg?v=1">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1">
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1" style="max-width: 100%; height: auto;">
   </picture>
 </div>
 
