@@ -1,4 +1,4 @@
-name: Generate Snake Contribution Game
+name: Generate Retro Arcade Games
 
 on:
   schedule:
@@ -18,9 +18,9 @@ concurrency:
 
 jobs:
   build:
-    name: Build & Deploy Retro Snake
+    name: Build & Deploy Retro Arcade Games
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: write
 
@@ -41,13 +41,22 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
 
+      # Generates retro Breakout brick-breaker game SVGs
+      - name: Generate Retro Breakout Game
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          games: 'breakout'
+          hide_month_labels: 'false'
+
       # Deploys the generated assets to the output branch
-      - name: Push Snake Assets to output branch
+      - name: Push Arcade Assets to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "chore: update retro snake contribution animation [skip ci]"
+          commit_message: "chore: update retro arcade contribution animations [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

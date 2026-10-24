@@ -78,11 +78,23 @@ I bridge the gap between low-level hardware control and high-performance web sys
 ### 🕹️ Retro Contribution Arcade
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake-dark.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1">
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1" style="max-width: 100%; height: auto;">
-  </picture>
+
+#### **🐍 Snake Eater**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake-dark.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1">
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1" style="max-width: 100%; height: auto;">
+</picture>
+
+<br>
+
+#### **🧱 Breakout Brick-Breaker**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/breakout-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/breakout-contribution-graph.svg">
+  <img alt="Breakout Contribution Graph" src="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/breakout-contribution-graph.svg" style="max-width: 100%; height: auto;">
+</picture>
+
 </div>
 
 ---
