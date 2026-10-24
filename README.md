@@ -15,18 +15,6 @@
 
 ---
 
-### 🕹️ Retro Contribution Arcade
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake-dark.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1">
-    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1" style="max-width: 100%; height: auto;">
-  </picture>
-</div>
-
----
-
 ### 🚀 About Me
 
 I bridge the gap between low-level hardware control and high-performance web systems. My engineering focus centers on writing clean firmware, architecting responsive full-stack applications, and creating automated digital solutions from bare silicon to the cloud.
@@ -34,7 +22,7 @@ I bridge the gap between low-level hardware control and high-performance web sys
 * 🎓 **Degree:** Third-Year Computer Engineering (BSCpE) student
 * 💻 **Primary OS:** Linux Mint & CachyOS
 * 🛠️ **Hardware Lab:** Digital logic circuit simulation, sensor telemetry, and microcontrollers (ESP8266, Arduino)
-* ⚡ **Software Core:** Modern component architectures (Vue 3, React, Tailwindcss), asynchronous backend APIs (FastAPI, Flask), and clean modular code
+* ⚡ **Software Core:** Modern component architectures (Vue 3, React, Tailwind CSS), asynchronous backend APIs (FastAPI, Flask), and clean modular code
 * 🎯 **Current Focus:** Real-time data logging, telemetry checksums, and scalable full-stack pipelines
 
 ---
@@ -79,20 +67,35 @@ I bridge the gap between low-level hardware control and high-performance web sys
     </td>
     <td width="50%" valign="top">
       <h4>🏛️ Scholar Bridge</h4>
-      <p>Multi-tier mobile application developed with <b>Python/Flask</b> and <b>MySQL</b>, featuring a Product/Service Publication, and a secured P2P Trading</p>
-      <p><code>Python</code> <code>Kivy</code> <code>KivyLang</code><code>Flask</code> <code>MySQL</code></p>
+      <p>Multi-tier mobile application developed with <b>Python/Flask</b> and <b>MySQL</b>, featuring product/service publication and secured P2P trading.</p>
+      <p><code>Python</code> <code>Kivy</code> <code>KivyLang</code> <code>Flask</code> <code>MySQL</code></p>
     </td>
   </tr>
 </table>
 
 ---
 
+### 🕹️ Retro Contribution Arcade
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake-dark.svg?v=1">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1">
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/HeavenLouisseC/HeavenLouisseC/output/github-contribution-grid-snake.svg?v=1" style="max-width: 100%; height: auto;">
+  </picture>
+</div>
+
+---
+
 ### 📊 GitHub Activity & Metrics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=HeavenLouisseC&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true" alt="Heaven's GitHub stats" style="max-width: 100%; height: auto; margin-bottom: 8px;" />
-  <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HeavenLouisseC&theme=tokyonight" alt="Heaven's GitHub streak" style="max-width: 100%; height: auto;" />
+  <a href="https://github.com/HeavenLouisseC">
+    <img src="https://github-readme-stats.vercel.app/api?username=HeavenLouisseC&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true" alt="Heaven's GitHub stats" height="165" />
+  </a>
+  <a href="https://github.com/HeavenLouisseC">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=HeavenLouisseC&theme=tokyonight" alt="Heaven's GitHub streak" height="165" />
+  </a>
 </div>
 
 ---
@@ -100,3 +103,4 @@ I bridge the gap between low-level hardware control and high-performance web sys
 <div align="center">
   <sub>Designed with precision. Open to collaborations on embedded systems, IoT architecture, and full-stack development.</sub>
 </div>
+
