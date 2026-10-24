@@ -28,7 +28,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Generates retro snake SVGs and animated GIF
+      # Ensure dist directory exists with full write permissions before running generators
+      - name: Prepare dist directory
+        run: |
+          mkdir -p dist
+          sudo chmod -R 777 dist
+
+      # Generates retro Breakout brick-breaker game SVGs (runs as host runner user)
+      - name: Generate Retro Breakout Game
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          games: 'breakout'
+          hide_month_labels: 'false'
+
+      # Generates retro snake SVGs and animated GIF (runs in Docker container)
       # Uses GH_TOKEN for private contributions, with safe fallback to GITHUB_TOKEN
       - name: Generate Retro Snake Game
         uses: Platane/snk@v3
@@ -41,14 +56,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
 
-      # Generates retro Breakout brick-breaker game SVGs
-      - name: Generate Retro Breakout Game
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
-          games: 'breakout'
-          hide_month_labels: 'false'
+      # Reclaim dist folder ownership for the runner user before deploying
+      - name: Reclaim dist ownership
+        run: |
+          sudo chown -R $USER:$USER dist
+          sudo chmod -R 777 dist
 
       # Deploys the generated assets to the output branch
       - name: Push Arcade Assets to output branch
